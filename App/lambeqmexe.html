@@ -1,0 +1,37 @@
+
+<html>
+  <head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1" />
+    <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
+     <script src="/JS/controledeeventos.js" defer></script>
+     <link rel="stylesheet" href="estilo.css">
+    <title>Lambe-que-mexe</title>
+  </head>
+   
+  <body>
+        <div >
+    <a href="/Index.html"><button type="button" autofocus class="btnvolta" enabled>X</button></a>
+        </div>
+      
+      
+    
+    <!--Target 1-->
+    <div>
+   
+      <a-scene  mindar-image="imageTargetSrc: /Media/vera.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+        
+        <a-camera position="0 0 0" look-controls="enabled: false" cursor="fuse: false; rayOrigin: mouse;" raycaster="far: ${customFields.libVersion}; objects: .clickable"></a-camera>
+  
+        <a-entity id="targetvera" mindar-image-target="targetIndex: 0" position="0 0 0">
+
+          <a-plane src="#epa" position="0 0 0" height="1.6" width="1.2" rotation="0 0 0" class="clickable" id="planevera"></a-plane>
+
+         <video id="epa" src="/Media/veraepa.mp4"></video>
+          
+        </a-entity>
+      </a-scene>
+    </div>
+    
+    </body>
+</html>

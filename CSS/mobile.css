@@ -1,0 +1,92 @@
+.boasvindas {
+  margin: 0; /* remove a margem padrão do navegador */
+  background-color: black;
+  overflow: hidden;
+
+}
+
+#titulo {
+  position: absolute; /* ou fixed, se quiser que fique fixo durante a rolagem */
+  top: 2%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "silkscreen";
+  font-size: 18px;
+  white-space: nowrap;
+  color: whitesmoke;
+}
+
+#subtitulo {
+color: whitesmoke;
+position: absolute; /* ou fixed, se quiser que fique fixo durante a rolagem */
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: "silkscreen";
+  order: 2;
+  white-space: nowrap;
+}
+
+
+#btnrow {
+  display: flex;
+  justify-content: center;  /* centraliza horizontalmente */
+  align-items: center;      /* centraliza verticalmente */
+  height: 100vh;            /* altura da tela inteira */
+  margin: 0;                /* remove margens padrão do body */
+
+}
+
+.cursor {
+  animation: blink 1s step-start infinite;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+
+.titulo-duplo {
+  display: flex;
+  gap: 10px; /* espaço entre os h1 */
+  align-items: baseline; /* ou center, dependendo do alinhamento que quiser */
+}
+
+.btnentrada {
+
+  background-color: black;
+  border-radius: 30px;
+  padding: 1em;
+  width: 300px;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-family: "silkscreen";
+  box-shadow: 2px 2px 4px rgba(255, 0, 0, 0.2);
+
+}
+
+.btnvolta {
+    background-color: black;
+  border-radius: 30px;
+  padding: 1em;
+  width: 300px;
+  color: rgb(255, 255, 255);
+  font-size: 20px;
+  font-family: "silkscreen";
+  box-shadow: 2px 2px 4px rgba(255, 0, 0, 0.2);
+  opacity: 50%;
+}
+
+.btnentrada:active {
+  background-color: #0515f3; /* Cor de fundo quando pressionado */
+  box-shadow: 0 5px #04ec9f;
+  transform: translateY(4px);
+}
+
+.footer{
+
+  font-family: "silkscreen";
+  color: white;
+  
+}
