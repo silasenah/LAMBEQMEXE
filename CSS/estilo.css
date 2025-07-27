@@ -76,15 +76,8 @@ position: absolute; /* ou fixed, se quiser que fique fixo durante a rolagem */
 }
 
 .btnvolta {
-    background-color: black;
-  border-radius: 30px;
-  padding: 1em;
-  width: 300px;
-  color: rgb(255, 255, 255);
-  font-size: 20px;
-  font-family: "silkscreen";
-  box-shadow: 2px 2px 4px rgba(255, 0, 0, 0.2);
-  opacity: 50%;
+background-color: aliceblue;
+padding: 3%;
 }
 
 .btnentrada:active {
