@@ -1,3 +1,5 @@
+import * as THREE from 'three';
+
 // Conntroles do Target 1 --
 
 const videoepa = document.querySelector('#epa');
