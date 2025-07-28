@@ -7,8 +7,8 @@
     <script src="https://aframe.io/releases/1.7.0/aframe.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/mind-ar@1.2.5/dist/mindar-image-aframe.prod.js"></script>
 
-     <script src="/JS/controledeeventos.js" defer></script>
-     <link rel="stylesheet" href="/CSS/estilo.css">
+     <script src="controledeeventos.js" defer></script>
+     <link rel="stylesheet" href="estilo.css">
     <title>Lambe-que-mexe</title>
   </head>
    
@@ -22,7 +22,7 @@
     <!--Target 1-->
     <div>
    
-      <a-scene  mindar-image="imageTargetSrc: /Media/vera.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
+      <a-scene  mindar-image="imageTargetSrc: vera.mind;" color-space="sRGB" renderer="colorManagement: true, physicallyCorrectLights" vr-mode-ui="enabled: false" device-orientation-permission-ui="enabled: false">
         
         <a-camera position="0 0 0" look-controls="enabled: false" cursor="fuse: false; rayOrigin: mouse;" raycaster="far: ${customFields.libVersion}; objects: .clickable"></a-camera>
   
@@ -30,7 +30,7 @@
 
           <a-plane src="#epa" position="0 0 0" height="1.6" width="1.2" rotation="0 0 0" class="clickable" id="planevera"></a-plane>
 
-         <video id="epa" src="/Media/veraepa.mp4"></video>
+         <video id="epa" src="veraepa.mp4"></video>
           
         </a-entity>
       </a-scene>
